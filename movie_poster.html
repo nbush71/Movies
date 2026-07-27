@@ -16,7 +16,7 @@
     </a>
     <div class="movie__search--container">
       <label class="movie__search--label">
-        Search by Id
+        Search by Title
       </label>
       <input type="text" placeholder="1" onchange="onSearchChange(event)">
     </div>
@@ -26,8 +26,9 @@
         <div class="row">
             <div class="movie_list">
                 <div class="movie">
-                    <div class="movie-card" onclick="showMovieTitle(id)">
+                    <div class="movie-card" onclick="showMovieTitle(title)">
                         <div class="movie__card--container">
+                          <br><br>
                             <h3>Movie Search</h3>
                             <p><b>Movie Title:</b></p>
                             <p><b>Year:</b></p>
