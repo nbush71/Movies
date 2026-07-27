@@ -4,7 +4,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: rgba(228, 212, 168, 0.6);
+  background-color: rgb(255, 204, 204);
 }
 
 .container {
@@ -55,3 +55,4 @@ p {
 .movie__search--label {
   padding-right: 8px;
 }
+
