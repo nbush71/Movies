@@ -40,10 +40,17 @@ h1 {
 /* LOGO */
 
 .logo {
-  height: 80px;
+  height: 40px;
   width: 40px;
   align-items: center !important;
 }
+
+.logo__anchor {
+  display: flex;
+  position: absolute;
+}
+
+/* MOVIE CARD */
 
 .movie-list {
   width: auto;
