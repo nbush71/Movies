@@ -88,6 +88,7 @@ p {
   justify-content: space-between;
   align-items: center;
   align-content: baseline;
+  align-content: baseline;
 }
 
 .input__container {

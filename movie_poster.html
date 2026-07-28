@@ -15,18 +15,20 @@
         <a href="index.html">
           <button class="button">← Back</button>
         </a>
-        <div class="movie__search--container">
+      </div>
+    </nav>
+    <section>
+      <div class="movie__search--container">
           <label class="movie__search--label">
             Search:
           </label>
-      </div>
-      <section>
+      <div class="input__container">
             <div class="input__wrapper">
               <input class="input" type="text" placeholder="Search Movie Title" onchange="onSearchChange(event)">
                 <div class="form button">
                       <label for="sortMenu">Sort:</label>
                         <select class="sort" name="sortMenu" id="sortMenu">
-                          <option value="az" selected>Alphabetized A to Z</option>
+                          <option value="az" selected>Alphabetical A to Z</option>
                           <option value="za">Alphabetical Z to A</option>
                           <option value="newest">Newest to oldest</option>
                           <option value="oldest">Oldest to Newest</option>
@@ -34,9 +36,7 @@
                   </div>    
               </div>
           </div>
-        </section>
-    </nav>
-  </div>
+    </section>
   <div class="movie-list">
     <div class="container">
         <div class="row">
@@ -44,7 +44,7 @@
                 <div class="movie">
                     <div class="movie-card" onclick="showMovieTitle(title)">
                         <div class="movie__card--container">
-                          <br><br>
+                          <br>
                             <p><b>Movie Title:</b></p>
                             <p><b>Year:</b></p>
                             <p><b>ID:</b></p>
