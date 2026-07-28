@@ -47,26 +47,10 @@ h1 {
 
 .logo__anchor {
   display: flex;
-  position: relative;
-  flex-direction: column;
-}
+  align-items: center; 
+  justify-content: space-between;
+  flex-direction: row;
 
-/* NAV */
-.nav__row {
-  justify-content: space-between;
-}
-<div>
-            <div class="logo__anchor">          
-          <img class="logo" src="assets/film-solid.png" alt=" film logo">
-            </div>
-nav {
-  height: 100px;
-  width: 100%;
-  max-width: 1000px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 /* MOVIE CARD */
@@ -109,6 +93,16 @@ nav {
 .movie__search--label {
   padding: 20px 20px 40px 40px;
 }
+
+.nav__movie {nav__movie
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-direction: column;
+}
+
+/* BUTTON */
 
 .button {
   margin: 40px 20px 20px 40px;
