@@ -10,16 +10,34 @@
     <title>Movies API - Search</title>
 </head>
 <body>
-  <div class="movie__search">
-    <a href="index.html">
-      <button>← Back</button>
-    </a>
-    <div class="movie__search--container">
-      <label class="movie__search--label">
-        Search by Title
-      </label>
-      <input type="text" placeholder="1" onchange="onSearchChange(event)">
-    </div>
+  <nav>
+      <div class="movie__search">
+        <a href="index.html">
+          <button>← Back</button>
+        </a>
+        <div class="movie__search--container">
+          <label class="movie__search--label">
+            Search:
+          </label>
+          <input type="text" placeholder="Enter Movie Title" onchange="onSearchChange(event)">
+              <section>
+      </div>
+      <section>
+            <div class="input__wrapper">
+              <input class="input" type="text" placeholder="Search by Movie Title" onchange="onSearchChange(event)">
+                <div class="form button">
+                      <label for="sortMenu">Sort Items:  </label>
+                        <select class="sort" name="sortMenu" id="sortMenu">
+                          <option value="az" selected>Alphabetized A to Z</option>
+                          <option value="za">Alphabetical Z to A</option>
+                          <option value="newest">Newest to oldest</option>
+                          <option value="oldest">Oldest to Newest</option>
+                        </select>
+                  </div>    
+              </div>
+          </div>
+        </section>
+    </nav>
       <h3>Movie Search</h3>
   </div>
   <div class="movie-list">

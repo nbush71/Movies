@@ -7,18 +7,6 @@ body {
   background-color: rgb(233, 202, 161);
 
 }
-
-html {
-  scroll-behavior: smooth;
-}
-
-.title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 20px;
-}
-
 .container {
   margin: 0 auto;
   padding: 0;
@@ -44,12 +32,7 @@ p {
   width: auto;
   display: flex;
   flex-wrap: wrap;
-<<<<<<< HEAD
   margin: 40px;
-=======
-  margin-top: 20px;
-  padding: 20px;
->>>>>>> 4c4cd8efa3353176afa1d82d559602203b0c9151
 }
 
 .movie {
