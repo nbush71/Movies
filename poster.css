@@ -44,8 +44,12 @@ p {
   width: auto;
   display: flex;
   flex-wrap: wrap;
+<<<<<<< HEAD
+  margin: 40px;
+=======
   margin-top: 20px;
   padding: 20px;
+>>>>>>> 4c4cd8efa3353176afa1d82d559602203b0c9151
 }
 
 .movie {
