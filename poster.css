@@ -23,14 +23,26 @@ p {
   display: none;
 }
 
-h3 {
-  font-weight: bold;
-  
+h1 {
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 1.25;
+  color: #6030b1;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 .sort {
   margin: 10px;
   padding: 10px;
+}
+
+/* LOGO */
+
+.logo {
+  height: 80px;
+  width: 40px;
+  align-items: center !important;
 }
 
 .movie-list {
