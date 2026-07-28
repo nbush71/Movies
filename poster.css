@@ -47,7 +47,8 @@ h1 {
 
 .logo__anchor {
   display: flex;
-  position: absolute;
+  position: relative;
+  flex-direction: column;
 }
 
 /* MOVIE CARD */
