@@ -94,7 +94,7 @@ h1 {
   padding: 20px 20px 40px 40px;
 }
 
-.nav__movie {nav__movie
+.nav__movie {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -104,7 +104,10 @@ h1 {
 
 /* BUTTON */
 
-.button {
+.button__back {
+  font-size: 20px !important;
+  color: black;
+  width: 100px !important;
   margin: 40px 20px 20px 40px;
   padding: 10px;
   justify-content: space-between;
@@ -164,7 +167,7 @@ svg:not(:root).svg-inline--fa {
 }svg:not(:root).svg-inline--fa {
   overflow: visible;
 }
-.fa-spinner {
+.fa-spinner[data-v-cf78a876] {
   -webkit-animation: rotate-data-v-cf78a876 1s linear infinite;
   animation: rotate-data-v-cf78a876 1s linear infinite;
 }
