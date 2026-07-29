@@ -111,6 +111,74 @@ h1 {
   gap: 20px;
 }
 
+button {
+  width:200px;
+  margin-left:20px;
+  font-size:40px;
+  color:#fff;
+  border-radius:20px;
+  transition:all .25s ease
+}
+button.not-loading {
+  border:1px solid #6030b1;
+  background-color:#6030b1;
+  box-shadow:7px 7px 14px rgba(134,93,204,.3);
+  cursor:pointer
+}
+button.not-loading:active {
+  transform:scale(.95)
+}
+button.not-loading:hover {
+  background-color:#ff328f;
+  border:1px solid #ff328f
+}
+button.loading {
+  background-color:#0a1f44;
+  cursor:no-drop
+}
+button.loading:hover {
+  background-color:#000
+}
+button.loading:active {
+  transform:scale(1)
+}
+
+/* SVG */
+
+svg:not(:root).svg-inline--fa {
+  overflow: visible;
+}
+.fa-spinner {
+  -webkit-animation: rotate-data-v-cf78a876 1s linear infinite;
+  animation: rotate-data-v-cf78a876 1s linear infinite;
+}
+.svg-inline--fa.fa-w-16 {
+  width: 1em;
+}
+.svg-inline--fa {
+  display: inline-block;
+  font-size: inherit;
+  height: 1em;
+  overflow: visible;
+  vertical-align: -0.125em;
+}svg:not(:root).svg-inline--fa {
+  overflow: visible;
+}
+.fa-spinner {
+  -webkit-animation: rotate-data-v-cf78a876 1s linear infinite;
+  animation: rotate-data-v-cf78a876 1s linear infinite;
+}
+.svg-inline--fa.fa-w-16 {
+  width: 1em;
+}
+.svg-inline--fa {
+  display: inline-block;
+  font-size: inherit;
+  height: 1em;
+  overflow: visible;
+  vertical-align: -0.125em;
+}
+
 
 /* SEARCH */
 
@@ -184,3 +252,8 @@ input {
   flex-direction: row;
 }
 
+/* Spinner */
+.loading-state {
+  margin: 80px 0;
+  width: 100%;
+}
