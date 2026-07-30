@@ -212,22 +212,22 @@ a.link:hover {
 /* SEARCH */
 
 .input__wrapper {
-  width: 80%;
-  height: 120px;
-  position: absolute;
+  width: 100%;
+  height: 140px;
   display: flex;
-  padding: 20px;
+  padding: 10px;
   justify-content: center;
   align-items: center;
 }
 
 .input-container {
   width: 100%;
-  height: 100px;
+  height: 140px;
   display: flex;
-  flex-direction: column;
+  position: relative;
+  flex-direction: row;
   justify-content: center;
-  align-items: center;
+  align-items: center !important;
   margin: 20px;
   padding-bottom: 20px;
 }
@@ -319,11 +319,10 @@ a.btn-contact:hover {
 /* MOVIE NIGHT */
 
 .movienight {
-    max-width: max-content;
   bottom: 3px;
   height: 50vh;
-  position: relative;
-  padding-top: 40px;
+  padding-top: 30px;
+  position: static;
 }
 
 .movienight__img--wrapper {
@@ -331,8 +330,7 @@ a.btn-contact:hover {
   align-items: center;
   justify-content: center;
   margin: 40px;
-  max-height: auto;
-  width: inherit;
+  height: 400px;
 }
 
 /* SVG */
@@ -368,7 +366,7 @@ svg:not(:root).svg-inline--fa {
 nav {
 height: 100px;
 width: 100%;
-max-width: 1000px;
+max-width: 1200px;
 margin: 0 auto;
 display: flex;
 justify-content: space-between;
@@ -423,6 +421,7 @@ align-items: center;
 
 .nav__row {
   justify-content: space-between;
+  display: flex;
 }
 
 .personal-logo {
@@ -573,6 +572,7 @@ font-weight: bold;
   top: 24px;
   right: 18px;
 }
+
 .btn__menu {
   background: transparent;
   display: none;
