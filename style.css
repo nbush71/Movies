@@ -518,7 +518,7 @@ font-weight: bold;
   top: 0;
   left: 0;
   right: 0;
-  height: 378px;
+  height: 325px;
   margin: 24px 16px;
   padding: 32px;
   background-color: #fff;
@@ -526,8 +526,8 @@ font-weight: bold;
   border-radius: 8px;
   z-index: 4;
   visibility: hidden;
-  opacity: 0;
-  transform: translateX(300%);
+  opacity: 1;
+  transform: translateX(0);
   transition: all 300ms ease;
 }
 
