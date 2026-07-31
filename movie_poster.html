@@ -1,76 +1,149 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="poster.css">
-    <script src="https://kit.fontawesome.com/e74228a484.js" crossorigin="anonymous"></script>
-    <link rel="icon" href="/favicon.ico">
-    <title>Movies API - Search</title>
-</head>
-<body>
-  <header>
-  <nav>
-      <div class="nav__movie">
-        <a href="index.html">
-          <button class="button__back">← Back</button>
-          </a>
 
-        </div>
-        <div class="logo__anchor">
-          <img class="logo logo__anchor" src="assets/film-solid.png" alt=" film logo">
-          <h3>Movie Poster Search</h3>
-        </div>
-          <div>
-      </div>
-    </nav>
-    </header>
-    <main>
-    <section>
-        <h2>Find your favorite <span class="text--purple">Movie posters</span>!!</h2>
-      <div class="movie__search--container">
-        <div class="input__container">
-            <div class="input__wrapper">
-                <label class="movie__search--label">
-                Search:
-                </label>
-                <input class="input" type="text" placeholder="Search Movie Title" onchange="onSearchChange(event)">
-                  <div class="form button">
-                        <label class="sortMenu" id="sortMenu" for="sortMenu">Sort:</label>
-                          <select class="sort" name="sortMenu" id="sortMenu">
-                            <option value="az" selected>Alphabetical A to Z</option>
-                            <option value="za">Alphabetical Z to A</option>
-                            <option value="newest">Newest to oldest</option>
-                            <option value="oldest">Oldest to Newest</option>
-                          </select>
-                    </div>    
-                </div>
-          </div>
-    </section>
-  <section>
-  <section>
-  <div class="movie-list">
-    <div class="container">
-        <div class="row">
-            <div class="movie_list">
-                <div class="movie">
-                    <div class="movie-card" onclick="showMovieTitle(title)">
-                        <div class="movie__card--container">
-                          <br>
-                            <p><b>Movie Title:</b></p>
-                            <p><b>Year:</b></p>
-                            <p><b>ID:</b></p>
-                            <p><b>Poster:</b></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-  </div>
-  </section>
-  </main>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet" href="poster.css">
+
+<script src="https://kit.fontawesome.com/e74228a484.js" crossorigin="anonymous"></script>
+
+<link rel="icon" href="/favicon.ico">
+
+<title>Movies API - Search</title>
+
+</head>
+
+<body>
+
+<header>
+
+<nav>
+
+<div class="nav__movie">
+
+<a href="index.html">
+
+<button class="button__back">← Back</button>
+
+</a>
+
+</div>
+
+<div class="logo__anchor">
+
+<img class="logo logo__anchor" src="assets/film-solid.png" alt=" film logo">
+
+<h3>Movie Poster Search</h3>
+
+</div>
+
+<div>
+
+</div>
+
+</nav>
+
+</header>
+
+<main>
+
+<section>
+
+<h2>Find your favorite <span class="text--purple">Movie posters</span>!!</h2>
+
+<div class="movie__search--container">
+
+<div class="input__container">
+
+<div class="input__wrapper">
+
+<label class="movie__search--label">
+
+Search:
+
+</label>
+
+<input class="input" type="text" placeholder="Search Movie Title" onchange="onSearchChange(event)">
+
+<div class="form button">
+
+<label class="sortMenu" id="sortMenu" for="sortMenu">Sort:</label>
+
+<select class="sort" name="sortMenu" id="sortMenu">
+
+<option value="az" selected>Alphabetical A to Z</option>
+
+<option value="za">Alphabetical Z to A</option>
+
+<option value="newest">Newest to oldest</option>
+
+<option value="oldest">Oldest to Newest</option>
+
+</select>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<section>
+
+<div class="movie-list">
+
+<div class="container">
+
+<div class="row">
+
+<div class="movie_list">
+
+<div class="movie">
+
+<div class="movie-card" onclick="showMovieTitle(title)">
+
+<div class="movie__card--container">
+
+<br>
+
+<p><b>Movie Title:</b></p>
+
+<p><b>Year:</b></p>
+
+<p><b>ID:</b></p>
+
+<p><b>Poster:</b></p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+</main>
+
 </body>
+
 <script src="poster.js"></script>
+
 </html>

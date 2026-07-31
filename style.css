@@ -564,7 +564,7 @@ font-weight: bold;
 .menu--open .modal {
     visibility: visible;
     opacity: 1;
-    transform: translateX(0);
+    transform: translateX(300%);
 }
 
 .btn__menu--close {
