@@ -557,14 +557,14 @@ font-weight: bold;
     border: none;
 }
 
-.modal {
-  visibility: visible;
+.menu__open--modal {
+  visibility: hidden;
 }
 
-.menu--open .modal {
+.menu__open--modal {
     visibility: visible;
     opacity: 1;
-    transform: translateX(300%);
+    transform: translateX();
 }
 
 .btn__menu--close {
@@ -588,7 +588,11 @@ font-weight: bold;
   cursor: none;
 }
 
+/* FORM */
 
+.form {
+  width: 100%;
+}
 
 /* MEDIA */
 @media screen and (max-height: 1200px) {

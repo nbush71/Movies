@@ -1,6 +1,13 @@
 const movieListEl = document.querySelector(".movie-list");
+const params = new URLSearchParams(window.location.search)
+const search = params.get("search")
 
-async function onSearchChange(event) {
+
+function routeToMovies(event) {
+    window.location.href = `/movie_poster.html?search=${search}`
+}
+
+function onSearchChange(event) {
     const title = event.target.value.trim();
 
     if (!title) {
@@ -16,7 +23,7 @@ async function renderMovies(title) {
 
     try {
         const response = await fetch(
-            `https://www.omdbapi.com/?apikey=bd39f942&s=${encodeURIComponent(title)}`
+            `https://www.omdbapi.com/?apikey=bd39f942&s=${encodeURIComponent(title || "fast")}`
         );
 
         if (!response.ok) {
@@ -24,6 +31,7 @@ async function renderMovies(title) {
         }
 
         const movieData = await response.json();
+renderMovies(search);
 
         if (movieData.Response === "False") {
             movieListEl.innerHTML = `<p>${movieData.Error}</p>`;
@@ -53,4 +61,4 @@ function movieHTML(movie) {
         </div>`;
 }
 
-renderMovies("Fast");
+renderMovies(search);

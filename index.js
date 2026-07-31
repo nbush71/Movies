@@ -14,6 +14,6 @@ function routeToMovies(event) {
 
 const search = event.target.value;
 
-window.location.href = /movie_poster.html?search=${search}
+window.location.href = `/movie_poster.html?search=${search}`
 
 }
