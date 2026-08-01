@@ -593,6 +593,7 @@ font-weight: bold;
   .modal {
     display: block;
     top: 25%;
+    left: 25%;
   }
 
   .personal-logo {
@@ -601,6 +602,33 @@ font-weight: bold;
 
   .nav__link {
     visibility: hidden;
+  }
+
+}
+
+@media screen and (max-width: 360px) {
+  .modal {
+    display: block;
+    top: 15%;
+    left: 5%;
+  }
+
+  .movienight__img--wrapper {
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 16px;
+    margin: 16px;
+    height: 230px;
+  }
+
+  .movienight {
+    width: 300vh;
+    height: 225px;
+  }
+
+  .input-container {
+    height: 100px;
   }
 }
 
