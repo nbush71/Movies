@@ -575,14 +575,14 @@ font-weight: bold;
 
 
 .menu__open--modal {
-  visibility: hidden;
+  visibility: visible;
 }
 
 .modal {
   display: none;
   position: fixed;
   top: 25%;
-  right: 25%;
+  right: 50%;
   z-index: 1000;
 }
 
@@ -630,11 +630,22 @@ button {
 }
 
 
-
-@media screen and (max-width: 769px) {
+@media screen and (500px <= width) {
   .nav__lines {
     visibility: hidden;
   }
+ .nav__link {
+  visibility: visible;
+ }
+}
+
+@media screen and (500px => width) {
+  .nav__lines {
+    visibility: visible;
+  }
+ .nav__link {
+  visibility: hidden;
+ }
 }
 
 /* Show modal automatically on screens 768px wide or smaller */
@@ -654,8 +665,8 @@ button {
   }
 
   .nav__lines {
-    visibility: visible;
-}
+    visibility: hidden;
+  }
 }
 
 @media screen and (max-width: 360px) {
@@ -683,9 +694,13 @@ button {
     height: 100px;
   }
 
-.nav__lines {
-    visibility: visible;
+.nav__link {
+    visibility: hidden;
   }
+
+.nav__lines {
+  visibility: visible !important;
+}
 }
 
 /* The Close Button */
@@ -716,7 +731,7 @@ button {
 .btn__menu--close {
   position: fixed;
   top: 60px;
-  right: 56px;24px
+  right: 50%;
 }
 
 .btn__menu {
