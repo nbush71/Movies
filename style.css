@@ -660,13 +660,6 @@ button {
     visibility: visible;
   }
 
-  .nav__link {
-    visibility: hidden;
-  }
-
-  .nav__lines {
-    visibility: hidden;
-  }
 }
 
 @media screen and (max-width: 360px) {
@@ -700,6 +693,17 @@ button {
 
 .nav__lines {
   visibility: visible !important;
+}
+
+h1 {
+  font-size: 14px;
+}
+
+h2 {
+  font-size: 16px;
+}
+h3 {
+  font-size: 16px;
 }
 }
 
