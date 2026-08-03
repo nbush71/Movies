@@ -834,13 +834,14 @@ button {
     position: relative;
     padding: 16px;
     margin: 16px;
-    height: auto;
+    height: 100px;
   }
 
   .movienight {
     max-width: 100%;
     height: auto;
   }
+
 
   .input-container {
     height: 100px;
@@ -903,20 +904,6 @@ h3 {
     width: 200px;
   }
 
-  .movienight__img--wrapper {
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    padding: 16px;
-    margin: 16px;
-    height: auto;
-  }
-
-  .movienight {
-    max-width: 100%;
-    height: auto;
-  }
-
   .input-container {
     height: 100px;
   }
@@ -931,4 +918,5 @@ h2 {
 h3 {
   font-size: 16px;
 }
+
 }

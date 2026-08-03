@@ -1,3 +1,5 @@
+let movies = [];
+
 const movieListEl = document.querySelector(".movie-list");
 const params = new URLSearchParams(window.location.search)
 const search = params.get("search")
@@ -7,19 +9,21 @@ function routeToMovies(event) {
     window.location.href = `/movie_poster.html?search=${search || "fast"}`
 }
 
-function onSearchChange(event) {
-    const title = event.target.value.trim();
+function onSearchSubmit(event) {
+  event.preventDefault();
 
-    if (!title) {
-        movieListEl.innerHTML = "<p>Please type a movie title.</p>";
-        return;
-    }
+  const title = document.querySelector("#resultsSearch").value.trim();
 
-    renderMovies(title);
+  if (!title) {
+    movieListEl.innerHTML = "<p>Please type a movie title.</p>";
+    return;
+  }
+
+  renderMovies(title);
 }
 
 async function renderMovies(title) {
-    movieListEl.innerHTML = "<p>Loading movies...</p>";
+    movieListEl.innerHTML = `<div class="spinner"></div>`;
 
     try {
         const response = await fetch(
@@ -33,7 +37,8 @@ async function renderMovies(title) {
         const movieData = await response.json();
 
         if (movieData.Response === "False") {
-            movieListEl.innerHTML = `<p>${movieData.Error}</p>`;
+            movies = movieData.Search;
+            displayMovies(movies);
             return;
         }
 
@@ -42,6 +47,10 @@ async function renderMovies(title) {
         movieListEl.innerHTML = "<p>Sorry, movies could not be loaded.</p>";
         console.error(error);
     }
+}
+
+function displayMovies(movieArray) {
+  movieListEl.innerHTML = movieArray.map(movieHTML).join("");
 }
 
 function movieHTML(movie) {

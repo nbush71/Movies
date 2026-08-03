@@ -345,6 +345,7 @@ input {
       font-size: 20px;
       align-items: center;
       justify-content: center;
+      margin-top: 20px;
     }
 
     h3 {
@@ -371,7 +372,7 @@ input {
    }
 
     .movie__search--container {
-      width: 360px;
+      width: 340px;
       margin: 10px;
       padding: 10px;
     }

@@ -34,13 +34,11 @@
                 <div class="input__container">
                     <div class="input__wrapper">
                         <label class="movie__search--label">Search:  </label>
-                        <input class="input" type="text" placeholder="Search Movie Title" onchange="onSearchChange(event)">
+                        <input class="input"  id="resultsSearch" type="text" placeholder="Search Movie Title" onSubmit="onSearchSubmit(event)">
                         <div class="form button">
                             <select class="sort" name="sortMenu" id="sortMenu">
                                 <option value="az" selected>Alphabetical A to Z</option>
                                 <option value="za">Alphabetical Z to A</option>
-                                <option value="newest">Newest to oldest</option>
-                                <option value="oldest">Oldest to Newest</option>
                             </select>
                             </div>
                         </div>

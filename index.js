@@ -11,9 +11,21 @@ document.body.classList.remove("menu--open");
 }
 
 function routeToMovies(event) {
+  event.preventDefault();
 
-const search = event.target.value;
+  const search = document.querySelector("#homeSearch").value.trim();
 
-window.location.href = `/movie_poster.html?search=${search}`
+  if (!search) return;
 
+  window.location.href =
+    `movie_poster.html?search=${encodeURIComponent(search)}`;
+}function routeToMovies(event) {
+  event.preventDefault();
+
+  const search = document.querySelector("#homeSearch").value.trim();
+
+  if (!search) return;
+
+  window.location.href =
+    `movie_poster.html?search=${encodeURIComponent(search)}`;
 }
