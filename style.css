@@ -402,22 +402,6 @@ a.btn-contact:hover {
   height: 400px;
 }
 
-/* SVG */
-
-
-svg:not(:root).svg-inline--fa {
-  overflow: visible;
-}
-.svg-inline--fa.fa-w-16 {
-  width: 1em;
-}
-.svg-inline--fa {
-  display: inline-block;
-  font-size: inherit;
-  height: 2em;
-  overflow: visible;
-  vertical-align: -0.125em;
-}
 
 /* Landing Page */
 
@@ -688,19 +672,19 @@ button {
 
 @media screen and (500px <= width) {
   .nav__lines {
-    visibility: hidden;
+    visibility: visible;
   }
  .nav__link {
-  visibility: visible;
+  visibility: hidden;
  }
 }
 
 @media screen and (500px => width) {
   .nav__lines {
-    visibility: visible;
+    visibility: hidden;
   }
  .nav__link {
-  visibility: hidden;
+  visibility: visible;
  }
 }
 
