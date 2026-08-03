@@ -385,13 +385,16 @@ a.btn-contact:hover {
   color:#fff!important
 }
 
+  width: 100%;
 
 /* MOVIE NIGHT */
 
 .movienight {
   bottom: 3px;
-  height: 50vh;
+  width: 100%;
+  height: auto;
   padding-top: 30px;
+  padding-bottom: 30px;
   position: static;
 }
 
@@ -670,82 +673,6 @@ button {
   border-color: rgb(226, 232, 240);
 }
 
-
-@media screen and (max-width: 361px) {
-  .nav__lines {
-    visibility: visible;
-  }
-  .nav__link {
-    visibility: hidden;
-  }
-}
-
-@media screen and (min-width: 362px) {
-  .nav__lines {
-    visibility: hidden;
-  }
-    .nav__link {
-      visibility: visible;
-    }
-  }
-
-
-/* Show modal automatically on screens 768px wide or smaller */
-@media screen and (max-width: 768px) {
-  .modal {
-    display: block;
-    top: 25%;
-    left: 25%;
-  }
-
-  .personal-logo {
-    visibility: visible;
-  }
-
-}
-
-@media screen and (max-width: 360px) {
- .body {
-  width: 360px;
-  height: 540px;
- }
- 
-  .modal {
-    display: block;
-    top: 15%;
-    left: 5%;
-  }
-
-  .movienight__img--wrapper {
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    padding: 16px;
-    margin: 16px;
-    height: 230px;
-  }
-
-  .movienight {
-    width: 300vh;
-    height: 225px;
-  }
-
-  .input-container {
-    height: 100px;
-  }
-
-h1 {
-  font-size: 14px;
-}
-
-h2 {
-  font-size: 16px;
-}
-h3 {
-  font-size: 16px;
-}
-}
-
 /* The Close Button */
 .close {
   color: black;
@@ -812,8 +739,14 @@ h3 {
   .body {
     max-width: fit-content;
   }
-}
 
+  .nav__lines {
+    visibility: hidden;
+  }
+    .nav__link {
+      visibility: visible;
+    }
+  }
 
 @media (max-width: 1024px) {
   .navbar {
@@ -844,6 +777,159 @@ h3 {
   }
 
   .movienight {
-    max-width: min-content;
+    width: 100%;
+    height: auto;
   }
+}
+
+@media screen and (max-width: 768px) {
+  .nav__lines {
+    visibility: visible;
+  }
+  .nav__link {
+    visibility: hidden;
+  }
+}
+
+@media screen and (min-width: 360px, max-width: 412px) {
+  .nav__lines {
+    visibility: hidden;
+  }
+    .nav__link {
+      visibility: visible;
+    }
+  }
+
+
+/* Show modal automatically on screens 768px wide or smaller */
+@media screen and (max-width: 768px) {
+  .modal {
+    display: block;
+    top: 25%;
+    left: 25%;
+    width: 200px;
+  }
+
+  .personal-logo {
+    visibility: visible;
+  }
+
+}
+
+@media screen and (max-width: 360px) {
+ .body {
+  width: 360px;
+  height: 540px;
+ }
+ 
+  .modal {
+    display: block;
+    top: 15%;
+    left: 25%;
+    width: 300px;
+  }
+
+  .movienight__img--wrapper {
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 16px;
+    margin: 16px;
+    height: auto;
+  }
+
+  .movienight {
+    width: 100%;
+    height: auto;
+  }
+
+  .input-container {
+    height: 100px;
+  }
+
+h1 {
+  font-size: 14px;
+}
+
+h2 {
+  font-size: 16px;
+}
+h3 {
+  font-size: 16px;
+}
+}
+@media screen and (max-width: 700px) {
+  .nav__lines {
+    visibility: visible;
+  }
+  .nav__link {
+    visibility: hidden;
+  }
+}
+
+@media screen and (min-width: 360px, max-width: 412px) {
+  .nav__lines {
+    visibility: hidden;
+  }
+    .nav__link {
+      visibility: visible;
+    }
+  }
+
+
+/* Show modal automatically on screens 768px wide or smaller */
+@media screen and (max-width: 768px) {
+  .modal {
+    display: block;
+    top: 25%;
+    left: 10%;
+  }
+
+  .personal-logo {
+    visibility: visible;
+  }
+
+}
+
+@media screen and (max-width: 360px) {
+ .body {
+  width: 360px;
+  height: 540px;
+ }
+ 
+  .modal {
+    display: block;
+    top: 15%;
+    left: 5%;
+    width: 200px;
+  }
+
+  .movienight__img--wrapper {
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 16px;
+    margin: 16px;
+    height: auto;
+  }
+
+  .movienight {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .input-container {
+    height: 100px;
+  }
+
+h1 {
+  font-size: 14px;
+}
+
+h2 {
+  font-size: 16px;
+}
+h3 {
+  font-size: 16px;
+}
 }
