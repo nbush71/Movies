@@ -385,13 +385,12 @@ a.btn-contact:hover {
   color:#fff!important
 }
 
-  width: 100%;
 
 /* MOVIE NIGHT */
 
 .movienight {
   bottom: 3px;
-  width: 100%;
+  max-width: 100%;
   height: auto;
   padding-top: 30px;
   padding-bottom: 30px;
@@ -777,7 +776,7 @@ button {
   }
 
   .movienight {
-    width: 100%;
+    max-width: 100%;
     height: auto;
   }
 }
@@ -839,7 +838,7 @@ button {
   }
 
   .movienight {
-    width: 100%;
+    max-width: 100%;
     height: auto;
   }
 
