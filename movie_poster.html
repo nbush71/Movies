@@ -33,8 +33,12 @@
             <div class="movie__search--container">
                 <div class="input__container">
                     <div class="input__wrapper">
+                        <form onSubmit="onSearchSubmit(event)">
                         <label class="movie__search--label">Search:  </label>
-                        <input class="input"  id="resultsSearch" type="text" placeholder="Search Movie Title" onSubmit="onSearchSubmit(event)">
+                        <input class="input"  id="resultsSearch" type="text" placeholder="Search Movie Title">
+                        <button class="button" onclick="onSearchSubmit(event)">Search</button>
+                    </form>
+                </div>
                         <div class="form button">
                             <select class="sort" name="sortMenu" id="sortMenu">
                                 <option value="az" selected>Alphabetical A to Z</option>
