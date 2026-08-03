@@ -18,7 +18,9 @@
                 </a>
             </div>
             <div class="logo__anchor"> 
-                <img class="logo logo__anchor" src="assets/film-solid.png" alt=" film logo">
+                <a href="movie_poster.html">
+                    <img class="logo logo__anchor" src="assets/film-solid.png" alt=" film logo">
+                </a>
                 <h3>Movie Poster Search</h3>
             </div>
             <div>
@@ -32,7 +34,7 @@
                 <div class="input__container">
                     <div class="input__wrapper">
                         <label class="movie__search--label">Search:  </label>
-                        <input class="input" type="text" placeholder="Search Movie Title" onchange="routeToMovies(event)">
+                        <input class="input" type="text" placeholder="Search Movie Title" onchange="onSearchChange(event)">
                         <div class="form button">
                             <select class="sort" name="sortMenu" id="sortMenu">
                                 <option value="az" selected>Alphabetical A to Z</option>
@@ -69,4 +71,5 @@
         </main>
     </body>
     <script src="poster.js"></script>
+    <script src="sort.js"></script>
 </html>

@@ -4,7 +4,7 @@ const search = params.get("search")
 
 
 function routeToMovies(event) {
-    window.location.href = `/movie_poster.html?search=${search}`
+    window.location.href = `/movie_poster.html?search=${search || "fast"}`
 }
 
 function onSearchChange(event) {
@@ -31,7 +31,6 @@ async function renderMovies(title) {
         }
 
         const movieData = await response.json();
-renderMovies(search);
 
         if (movieData.Response === "False") {
             movieListEl.innerHTML = `<p>${movieData.Error}</p>`;

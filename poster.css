@@ -323,6 +323,21 @@ input {
   .nav__movie:not(:last-child) {
     display: flex;
   }
+
+  .sort {
+    visibility: hidden;
+  }
+
+    h2 {
+      font-size: 18px;
+      align-items: center;
+      justify-content: center;
+    }
+
+    h3 {
+      font-size: 16px;
+    }
+
 }
 
   @media (max-width: 360px) {
@@ -362,7 +377,7 @@ input {
     }
 
     .input__container {
-      width: 360px;
+      width: 100%;
       justify-content: center;
     }
     
@@ -374,15 +389,14 @@ input {
 
     .input {
       width: 100%;
-
     }
-    
+       
     .movie__search--label {
-      visibility: visible;
+      visibility:  visible;
       justify-content: center;
     }  
 
-    .form {
+   .sort {
       visibility: hidden;
     }
     }
