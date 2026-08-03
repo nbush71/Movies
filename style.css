@@ -295,6 +295,8 @@ svg:not(:root).svg-inline--fa {
 
 @keyframes spin {
   0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
 
 svg:not(:root).svg-inline--fa {
   overflow: visible;
@@ -313,13 +315,12 @@ svg:not(:root).svg-inline--fa {
   overflow: visible;
   vertical-align: -0.125em;
 }
-}
 
 @media screen and (max-width:500px) {
   .fa-spinner {
-  -webkit-animation:rotate-data-v-cf78a876 1s linear infinite;
-  animation:rotate-data-v-cf78a876 1s linear infinite
-}
+    -webkit-animation: rotate-data-v-cf78a876 1s linear infinite;
+    animation: rotate-data-v-cf78a876 1s linear infinite;
+  }
 }
 
 /* BUTTON */
@@ -670,23 +671,24 @@ button {
 }
 
 
-@media screen and (500px <= width) {
+@media screen and (max-width: 361px) {
   .nav__lines {
     visibility: visible;
   }
- .nav__link {
-  visibility: hidden;
- }
+  .nav__link {
+    visibility: hidden;
+  }
 }
 
-@media screen and (500px => width) {
+@media screen and (min-width: 362px) {
   .nav__lines {
     visibility: hidden;
   }
- .nav__link {
-  visibility: visible;
- }
-}
+    .nav__link {
+      visibility: visible;
+    }
+  }
+
 
 /* Show modal automatically on screens 768px wide or smaller */
 @media screen and (max-width: 768px) {
@@ -731,14 +733,6 @@ button {
   .input-container {
     height: 100px;
   }
-
-.nav__link {
-    visibility: hidden;
-  }
-
-.nav__lines {
-  visibility: visible !important;
-}
 
 h1 {
   font-size: 14px;
