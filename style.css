@@ -266,6 +266,62 @@ input {
   padding-left: 25px;
 }
 
+/* SPINNER */
+.spinner {
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #6030b1;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  animation: spin 1s linear infinite;
+}
+
+
+/* SVG */
+
+svg:not(:root).svg-inline--fa {
+  overflow: visible;
+}
+.svg-inline--fa.fa-w-16 {
+  width: 1em;
+}
+.svg-inline--fa {
+  display: inline-block;
+  font-size: inherit;
+  height: 2em;
+  overflow: visible;
+  vertical-align: -0.125em;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+
+svg:not(:root).svg-inline--fa {
+  overflow: visible;
+}
+.fa-spinner {
+  -webkit-animation: rotate-data-v-cf78a876 1s linear infinite;
+  animation: rotate-data-v-cf78a876 1s linear infinite;
+}
+.svg-inline--fa.fa-w-16 {
+  width: 1em;
+}
+.svg-inline--fa {
+  display: inline-block;
+  font-size: inherit;
+  height: 1em;
+  overflow: visible;
+  vertical-align: -0.125em;
+}
+}
+
+@media screen and (max-width:500px) {
+  .fa-spinner {
+  -webkit-animation:rotate-data-v-cf78a876 1s linear infinite;
+  animation:rotate-data-v-cf78a876 1s linear infinite
+}
+}
+
 /* BUTTON */
 
 a.btn-contact {
@@ -663,6 +719,11 @@ button {
 }
 
 @media screen and (max-width: 360px) {
+ .body {
+  width: 360px;
+  height: 540px;
+ }
+ 
   .modal {
     display: block;
     top: 15%;
