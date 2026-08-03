@@ -36,10 +36,17 @@ async function renderMovies(title) {
 
         const movieData = await response.json();
 
+
         if (movieData.Response === "False") {
-            movies = movieData.Search;
-            displayMovies(movies);
+            movieListEl.innerHTML = `<p>${movieData.Error}</p>`;
             return;
+        }
+
+        movies = movieData.Search;
+        displayMovies(movies);
+
+        function displayMovies(movieArray) {
+        movieListEl.innerHTML = movieArray.map(movieHTML).join("");
         }
 
         movieListEl.innerHTML = movieData.Search.map(movieHTML).join("");
@@ -47,10 +54,6 @@ async function renderMovies(title) {
         movieListEl.innerHTML = "<p>Sorry, movies could not be loaded.</p>";
         console.error(error);
     }
-}
-
-function displayMovies(movieArray) {
-  movieListEl.innerHTML = movieArray.map(movieHTML).join("");
 }
 
 function movieHTML(movie) {
