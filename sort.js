@@ -1,5 +1,3 @@
-const sortMenu = document.querySelector("#sortMenu");
-
 if (sortMenu) {
   sortMenu.addEventListener("change", (event) => {
     const sortedMovies = [...movies];
@@ -14,5 +12,4 @@ if (sortMenu) {
 
     displayMovies(sortedMovies);
   });
-if (sortMenu) {
 }
