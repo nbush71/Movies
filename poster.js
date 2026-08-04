@@ -4,6 +4,9 @@ const movieListEl = document.querySelector(".movie-list");
 const params = new URLSearchParams(window.location.search)
 const search = params.get("search")
 
+function displayMovies(movieArray) {
+  movieListEl.innerHTML = movieArray.map(movieHTML).join("");
+}
 
 function routeToMovies(event) {
     window.location.href = `/movie_poster.html?search=${search || "fast"}`
@@ -44,12 +47,6 @@ async function renderMovies(title) {
 
         movies = movieData.Search;
         displayMovies(movies);
-
-        function displayMovies(movieArray) {
-        movieListEl.innerHTML = movieArray.map(movieHTML).join("");
-        }
-
-        movieListEl.innerHTML = movieData.Search.map(movieHTML).join("");
     } catch (error) {
         movieListEl.innerHTML = "<p>Sorry, movies could not be loaded.</p>";
         console.error(error);
